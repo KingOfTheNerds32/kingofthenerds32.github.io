@@ -682,19 +682,34 @@
     <div class="row section-header narrow" data-aos="fade-up">
       <div class="col-full">
         <h3 class="subhead">Keep In Touch</h3>
-        <h1 class="display-1">Feel free to contact me for any project idea or collaboration</h1>
+        <h1 class="display-1">Feel free to contact me for any project ideas or collaboration</h1>
       </div>
     </div>
     <!-- end section-header -->
 
+
     <div class="row contact-main" data-aos="fade-up">
       <div class="col-full">
-        <p class="contact-email">
-          <a href="mailto:#0">sayhello@sublime.com</a>
-        </p>
-        <p class="contact-numbers">
-          +1 (818) 856-0388
-        </p>
+        <form id="contact-form">
+          <div>
+            <label for="name">Name</label>
+            <input class="full-width" type="text" placeholder="Bruce Wayne" id="name" name="name">
+          </div>
+          <div>
+            <label for="email_address">Email</label>
+            <input class="full-width" type="email" placeholder="bruce@wayneenterprises.com" id="email_address" name='email'>
+          </div>
+          <div>
+            <label for="phone_number">Phone Number</label>
+            <input class="full-width" type="tel" placeholder="(555) 867-5309" id="phone_number" name="phone">
+          </div>
+
+          <label for="contact_message">Message</label>
+          <textarea class="full-width" placeholder="Holy utility belt - we need some help with our data science and analytics needs! Light the bat signal!" id="contact_message" name="message"></textarea>
+
+          <input class="btn--primary full-width" type="submit" value="Submit">
+
+        </form>
 
         <ul class="contact-social">
           <li>
@@ -770,5 +785,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+
 
 </body>
