@@ -37,6 +37,12 @@ $(document).ready(function() {
     $.ajax(settings)
       .done(function(response) {
         console.log(response);
+        if (response['ResponseMetadata']['HTTPStatusCode'] == 200){
+          $("#contact_success").show()
+        }
+        else {
+          $("#contact_error").show()
+        };
       });
     event.preventDefault();
   });

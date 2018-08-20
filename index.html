@@ -690,13 +690,19 @@
 
     <div class="row contact-main" data-aos="fade-up">
       <div class="col-full">
-        <div class="alert-box alert-box--success hideit">
+        <div class="alert-box alert-box--success hideit" id="contact_success" style="display: none">
           <p>
             Success!
           </p>
           Thanks for contacting me - I'll be in touch soon!
           <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
         </div>
+        <div class="alert-box alert-box--error hideit" id="contact_error" style="display: none">
+          <p>Error</p>
+          This is embarrassing, but it looks like something went wrong. Please try again later. Thanks!
+          <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+        </div>
+        <!-- /error -->
         <form id="contact-form">
           <div>
             <label for="name">Name</label>
