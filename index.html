@@ -690,22 +690,29 @@
 
     <div class="row contact-main" data-aos="fade-up">
       <div class="col-full">
+        <div class="alert-box alert-box--success hideit">
+          <p>
+            Success!
+          </p>
+          Thanks for contacting me - I'll be in touch soon!
+          <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+        </div>
         <form id="contact-form">
           <div>
             <label for="name">Name</label>
-            <input class="full-width" type="text" placeholder="Bruce Wayne" id="name" name="name">
+            <input class="full-width" type="text" placeholder="Bruce Wayne" id="name" name="name" required>
           </div>
           <div>
             <label for="email_address">Email</label>
-            <input class="full-width" type="email" placeholder="bruce@wayneenterprises.com" id="email_address" name='email'>
+            <input class="full-width" type="email" placeholder="bruce@wayneenterprises.com" id="email_address" name='email' required>
           </div>
           <div>
             <label for="phone_number">Phone Number</label>
-            <input class="full-width" type="tel" placeholder="(555) 867-5309" id="phone_number" name="phone">
+            <input class="full-width" type="tel" placeholder="(555) 867-5309" id="phone_number" name="phone" required>
           </div>
 
           <label for="contact_message">Message</label>
-          <textarea class="full-width" placeholder="Holy utility belt - we need some help with our data science and analytics needs! Light the bat signal!" id="contact_message" name="message"></textarea>
+          <textarea class="full-width" placeholder="Holy utility belt - we need some reinforcements! Light the bat signal!" id="contact_message" name="message" required></textarea>
 
           <input class="btn--primary full-width" type="submit" value="Submit">
 
